@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PANDA Terminal',
+  title: 'PANDA Docs',
   tagline: 'Your New Workspace',
   favicon: 'img/favicon.ico',
 
@@ -79,7 +79,7 @@ const config = {
       navbar: {
         title: 'PANDA Terminal',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'PANDA Logo',
           src: 'img/logo.png',
           href: "https://www.pandaterminal.com"
         },
