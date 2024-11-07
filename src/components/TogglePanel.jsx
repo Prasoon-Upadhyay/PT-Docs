@@ -9,6 +9,14 @@ function TogglePanel ( {panelBtnFirst, panelBtnSecond, panelContentId}) {
         padding: '.5rem 1rem',
         border: 0,
         cursor: 'pointer', 
+        marginRight: '.5rem'
+    }
+    const panelStyles = {
+        border: '1px solid rgba(0,0,0,.15)',
+        borderRadius: '5px'
+    }
+    const contentStyles = {
+        padding: '.5rem 1rem'
     }
     const content = {
         'wb-overview': {
@@ -37,12 +45,12 @@ function TogglePanel ( {panelBtnFirst, panelBtnSecond, panelContentId}) {
         
     }
     return (
-        <div className='panel'>
+        <div style={panelStyles}>
             <div className='top-drawer'>
-                <button style={btnStyles} onClick={() => setPanelItem(panelBtnFirst)}>{panelBtnFirst}</button>
-                <button style={btnStyles} onClick={() => setPanelItem(panelBtnSecond)}>{panelBtnSecond}</button>
+                <button style={{...btnStyles, backgroundColor: panelItem === panelBtnFirst ? '#fff' : ''}} onClick={() => setPanelItem(panelBtnFirst)}>{panelBtnFirst}</button>
+                <button style={{...btnStyles, backgroundColor: panelItem === panelBtnSecond ? '#fff' : ''}} onClick={() => setPanelItem(panelBtnSecond)}>{panelBtnSecond}</button>
             </div>
-            <div className='panelContent'>
+            <div  style={contentStyles}>
                 {
                     panelItem === panelBtnFirst ? content[panelContentId].panelOne :  content[panelContentId].panelTwo
                 }
