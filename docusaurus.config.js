@@ -80,7 +80,7 @@ const config = {
         title: 'PANDA Terminal',
         logo: {
           alt: 'PANDA Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
           href: "https://www.pandaterminal.com"
         },
         items: [
