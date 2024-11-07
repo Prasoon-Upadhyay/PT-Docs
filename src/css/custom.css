@@ -28,3 +28,16 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.footer a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer .footer__col:last-child .footer__items {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: end;
+}
