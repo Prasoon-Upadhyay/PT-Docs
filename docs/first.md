@@ -1,0 +1,5 @@
+# Getting Started
+
+## Don't Just Trade Crypto, Dominate It With PANDA Terminal
+
+**PANDA Terminal** is your all-in-one solution to trade, monitor markets, and manage assets across both centralized and decentralized exchanges—all from a single, powerful app. We do this by equipping you with the right tools, like Advanced Chart Analysis, Scalping Scanners, and fully customizable dashboards so you can create a sense of predictability in market movements and make the right trading decisions for better profits. A wide range of custom metrics supports you in making better-informed technical decisions.
