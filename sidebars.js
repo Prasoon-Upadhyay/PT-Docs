@@ -23,41 +23,40 @@ const sidebars = {
       label: "Introduction",
       collapsible: false,
       collapsed: false,
-      items: [{
-        type: 'doc',
-        label: "About PANDA Terminal",
-        id: 'introduction/about-pt'
-      }, 'introduction/getting-started']
+      items: [
+        // {
+        //   type: 'doc',
+        //   label: "About PANDA Terminal",
+        //   id: 'introduction/about-pt'
+        // }
+        'introduction/getting-started']
     },
     {
       type: "category",
       label: "Workbench",
       collapsible: false,
+      link: { type: 'doc', id: 'workbench/overview/index' },
       collapsed: false,
-      items: [{
-        type: "category",
-        label: "Overview",
-        link: { type: 'doc', id: 'workbench/overview/index' },
-        collapsible: true,
-        collapsed: false,
-        items: ['workbench/overview/navigating-the-chart-interface']
-      }, 'workbench/workbench-cmds', {
-        type: "category",
-        label: "Using The Workbench",
-        link: { type: 'doc', id: 'workbench/using-the-workbench/using-the-wb' },
-        collapsible: true,
-        collapsed: false,
-        items: ['workbench/using-the-workbench/charting-tools',
-          {
-            type: "category",
-            label: "Studies/Metrics",
-            link: { type: 'doc', id: 'workbench/using-the-workbench/studies-metrics/index' },
-            collapsible: true,
-            collapsed: false,
-            items: [{
+      items: [
+        // {
+        //   type: "category",
+        //   label: "Overview",
+        //   link: { type: 'doc', id: 'workbench/overview/index' },
+        //   collapsible: true,
+        //   collapsed: false,
+        //   items: ['workbench/overview/navigating-the-chart-interface']
+        // },
+        'workbench/workbench-cmds', {
+          type: "category",
+          label: "Using The Workbench",
+          link: { type: 'doc', id: 'workbench/using-the-workbench/using-the-wb' },
+          collapsible: true,
+          collapsed: false,
+          items: ['workbench/using-the-workbench/charting-tools',
+            {
               type: "category",
-              label: "Custom Metrics",
-              link: { type: 'doc', id: 'workbench/using-the-workbench/studies-metrics/custom-metrics/index' },
+              label: "Studies/Metrics",
+              link: { type: 'doc', id: 'workbench/using-the-workbench/studies-metrics/index' },
               collapsible: true,
               collapsed: false,
               items: ['workbench/using-the-workbench/studies-metrics/custom-metrics/onchain-metrics',
@@ -68,20 +67,21 @@ const sidebars = {
                 'workbench/using-the-workbench/studies-metrics/custom-metrics/jlabs-models',
                 'workbench/using-the-workbench/studies-metrics/custom-metrics/jlabs-token-ratings'
               ]
-            }]
-          },
-          'workbench/using-the-workbench/panda-intel'
-        ]
-      },
+            },
+            'workbench/using-the-workbench/panda-intel'
+          ]
+        },
         'workbench/saving-resaving-a-workbench',
         'workbench/sharing']
     },
     {
       type: "category",
       label: "Screener",
+      link: { type: 'doc', id: 'screener/overview' },
       collapsible: false,
       collapsed: false,
-      items: ['screener/overview',
+      items: [
+        // 'screener/overview',
         'screener/screener-commands',
         {
           type: "category",
@@ -108,7 +108,9 @@ const sidebars = {
       label: "Dashboard",
       collapsible: false,
       collapsed: false,
-      items: ['dashboard/overview',
+      link: { type: 'doc', id: 'dashboard/overview' },
+      items: [
+        // 'dashboard/overview',
         'dashboard/dashboard-commands',
         'dashboard/creating-a-dashboard',
         {
@@ -181,23 +183,26 @@ const sidebars = {
     {
       type: 'category',
       label: "Community",
+      link: { type: 'doc', id: "community/overview" },
       collapsible: false,
       collapsed: false,
-      items: ['community/overview', {
-        type: 'category',
-        label: 'Building a Community',
-        collapsible: true,
-        collapsed: false,
-        link: { type: 'doc', id: 'community/building-a-community/index' },
-        items: [{
+      items: [
+        // 'community/overview', 
+        {
           type: 'category',
-          label: 'Creating a Community',
+          label: 'Building a Community',
           collapsible: true,
           collapsed: false,
-          link: { type: 'doc', id: 'community/building-a-community/creating-a-community/index' },
-          items: ['community/building-a-community/creating-a-community/admin-control-and-access']
-        }, 'community/building-a-community/managing-a-community']
-      },
+          link: { type: 'doc', id: 'community/building-a-community/index' },
+          items: [{
+            type: 'category',
+            label: 'Creating a Community',
+            collapsible: true,
+            collapsed: false,
+            link: { type: 'doc', id: 'community/building-a-community/creating-a-community/index' },
+            items: ['community/building-a-community/creating-a-community/admin-control-and-access']
+          }, 'community/building-a-community/managing-a-community']
+        },
         'community/publishing-in-community',
         'community/access-and-clone-publishes'
       ]
