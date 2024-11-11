@@ -15,8 +15,10 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  font-size: 90%;
   --doc-sidebar-width: 23rem;
+  font-size: 90%;
+  --footer-bg-color: rgba(255, 255, 255, 0.696);
+  --footer-fg-color: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,11 +31,18 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --footer-bg-color: rgba(0, 0, 0, 0.1);
+  --footer-fg-color: rgba(255, 255, 255, 0.696);
 }
 
 .footer a {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  border-top: 1px solid #ffffff2d;
 }
 
 .footer .footer__col:last-child .footer__items {
@@ -114,4 +123,18 @@
   border-left: 4px solid var(--ifm-color-primary);
   border-radius: 0;
   opacity: 1;
+}
+
+.footer__bottom {
+  text-align: start;
+}
+
+.footer__bottom img {
+  transform: translateY(-40px);
+}
+
+.footer__copyright {
+  text-align: center;
+  opacity: 0.85;
+  font-size: 90%;
 }

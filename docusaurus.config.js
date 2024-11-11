@@ -87,12 +87,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'PANDA',
-            items: [
-
-            ],
-          },
-          {
             title: ' ',
             items: [
               {
@@ -114,6 +108,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: 'PANDA Terminal',
+          src: 'img/logo.svg',
+          href: 'https://www.pandaterminal.com',
+        },
         copyright: `© 2023 Panda Terminal, All Rights reserved`,
       },
       prism: {
