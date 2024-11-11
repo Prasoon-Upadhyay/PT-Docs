@@ -71,7 +71,7 @@ const config = {
         title: ' ',
         logo: {
           alt: 'PANDA Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.ico',
           href: "https://www.pandaterminal.com"
         },
         items: [
