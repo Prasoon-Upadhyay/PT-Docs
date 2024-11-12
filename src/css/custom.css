@@ -26,6 +26,7 @@
   --footer-border-color: rgba(0, 0, 0, 0.129);
   --info-fg-color: rgb(135, 157, 235);
   --info-bg-color: rgba(135, 188, 235, 0.145);
+  --footer-logo: url("./../../assets/images/panda-footer-logo-light.png");
 }
 
 [data-theme="dark"] {
@@ -42,6 +43,7 @@
   --footer-border-color: rgba(255, 255, 255, 0.268);
   --info-fg-color: rgb(135, 188, 235);
   --info-bg-color: rgba(135, 188, 235, 0.132);
+  --footer-logo: url("./../../assets/images/panda-footer-logo-dark.png");
 }
 
 .footer a {
@@ -189,10 +191,6 @@ main img {
   transform: translateX(-15px);
 }
 
-table {
-  place-self: center;
-}
-
 table img {
   transform: none;
 }
@@ -232,4 +230,9 @@ li > p {
 .info-icon {
   display: flex;
   width: 30px;
+}
+
+.footer__logo {
+  content: var(--footer-logo);
+  width: 20%;
 }

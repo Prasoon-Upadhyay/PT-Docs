@@ -127,7 +127,7 @@ const config = {
         ],
         logo: {
           alt: 'PANDA Terminal',
-          src: 'img/logo.svg',
+          src: 'img/panda-footer-logo-light.png',
           href: 'https://www.pandaterminal.com',
         },
         copyright: `© 2023 Panda Terminal, All Rights reserved`,
