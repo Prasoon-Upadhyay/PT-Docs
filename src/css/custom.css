@@ -95,7 +95,7 @@
 }
 [class^="theme-doc-sidebar-item-"] > .menu__link,
 .menu__list-item-collapsible > .menu__link.menu__link--sublist {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .theme-doc-sidebar-item-category-level-1
@@ -189,6 +189,7 @@ main {
 main img {
   margin: 1rem 0;
   transform: translateX(-15px);
+  width: 100%;
 }
 
 table img {
@@ -235,4 +236,26 @@ li > p {
 .footer__logo {
   content: var(--footer-logo);
   width: 20%;
+}
+
+thead tr th {
+  text-align: start;
+  font-weight: 400;
+}
+
+video {
+  width: 100%;
+}
+
+.markdown > #gini ~ h2,
+#gini,
+#tradebook-count,
+#tradebook-volume,
+#mcap-market-cap,
+.markdown > #mcap-market-cap ~ h2 {
+  margin-bottom: 0.5rem;
+}
+
+.theme-admonition img {
+  transform: none;
 }
