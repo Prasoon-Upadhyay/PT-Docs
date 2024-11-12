@@ -46,6 +46,7 @@ const sidebars = {
         //   collapsed: false,
         //   items: ['workbench/overview/navigating-the-chart-interface']
         // },
+        'workbench/overview/navigating-the-chart-interface',
         'workbench/workbench-cmds', {
           type: "category",
           label: "Using The Workbench",
@@ -55,7 +56,7 @@ const sidebars = {
           items: ['workbench/using-the-workbench/charting-tools',
             {
               type: "category",
-              label: "Studies/Metrics",
+              label: "Studies",
               link: { type: 'doc', id: 'workbench/using-the-workbench/studies-metrics/index' },
               collapsible: true,
               collapsed: false,
@@ -81,16 +82,7 @@ const sidebars = {
       collapsible: false,
       collapsed: false,
       items: [
-        // 'screener/overview',
-        'screener/screener-commands',
-        {
-          type: "category",
-          label: "Using a Screener",
-          collapsible: true,
-          collapsed: false,
-          link: { type: 'doc', id: 'screener/using-a-screener/using-a-screener' },
-          items: ['screener/using-a-screener/creating-a-screener']
-        },
+        'screener/screener-commands', 'screener/creating-a-screener',
         {
           type: "category",
           label: "Screener Filters",

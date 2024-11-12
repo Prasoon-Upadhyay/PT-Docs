@@ -15,7 +15,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --doc-sidebar-width: 23rem;
+  --doc-sidebar-width: 24rem;
   font-size: 90%;
 }
 
@@ -167,6 +167,40 @@ h2 {
   font-size: 160%;
 }
 
+h1 {
+  font-size: 220%;
+  font-weight: 500;
+}
+
 main {
-  padding-left: 2rem;
+  padding-left: 3rem;
+}
+
+.docSidebarContainer_YfHR {
+  border-color: transparent;
+}
+
+main img {
+  margin: 1rem 0;
+  transform: translateX(-15px);
+}
+
+table {
+  place-self: center;
+}
+
+table img {
+  transform: none;
+}
+td:has(code) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+main {
+  font-size: 105%;
+}
+
+li > p {
+  margin-left: 0.5rem;
 }
