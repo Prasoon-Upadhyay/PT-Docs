@@ -73,7 +73,14 @@ const sidebars = {
           ]
         },
         'workbench/saving-resaving-a-workbench',
-        'workbench/sharing']
+        {
+          type: 'category',
+          label: "Sharing",
+          link: { type: "doc", id: "workbench/sharing/index" },
+          collapsible: true,
+          collapsed: false,
+          items: ['workbench/sharing/sharing-in-workbench', 'workbench/sharing/sharing-in-panda-intel']
+        }]
     },
     {
       type: "category",
