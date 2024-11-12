@@ -13,7 +13,19 @@ const config = {
   title: 'PANDA Docs',
   tagline: 'Your New Workspace',
   favicon: 'img/favicon.ico',
-
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/introduction/getting-started', // Target path
+            from: '/',   // Path to redirect from
+          },
+        ],
+      },
+    ],
+  ],
   // Set the production url of your site here
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -92,6 +104,11 @@ const config = {
               {
                 label: 'Terminal',
                 to: 'https://www.app.pandaterminal.com ',
+                logo: {
+                  alt: 'PANDA Logo',
+                  src: 'img/favicon.ico',
+                  href: "https://www.pandaterminal.com"
+                }
               },
               {
                 label: 'Telegram',
