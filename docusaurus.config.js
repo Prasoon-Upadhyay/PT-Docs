@@ -73,7 +73,16 @@ const config = {
       }),
     ],
   ],
+  headTags: [
 
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3'
+      },
+    },
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -135,6 +144,16 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      algolia: {
+        appId: '6QFTTPQ378',
+        apiKey: 'bcb92991aac55f1aeea51b8d7ea73abf',
+        indexName: 'pt-vercel',
+        contextualSearch: true,
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        searchParameters: {},
+        searchPagePath: 'search',
+        insights: false,
       },
     }),
 };
