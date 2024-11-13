@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #0266ff;
+  --ifm-color-primary: #468fff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -27,6 +27,7 @@
   --info-fg-color: rgb(135, 157, 235);
   --info-bg-color: rgba(135, 188, 235, 0.145);
   --footer-logo: url("./../../assets/images/panda-footer-logo-light.png");
+  --twitter-icon: url("./../../static/img/twitter.png");
 }
 
 [data-theme="dark"] {
@@ -44,6 +45,9 @@
   --info-fg-color: rgb(135, 188, 235);
   --info-bg-color: rgba(135, 188, 235, 0.132);
   --footer-logo: url("./../../assets/images/panda-footer-logo-dark.png");
+  --twitter-icon: url("./../../static/img/twitter-dark.png");
+  --twitter--logo-width: 2rem;
+  --twitter--logo-height: 2rem;
 }
 
 .footer a {
@@ -258,4 +262,33 @@ video {
 
 .theme-admonition img {
   transform: none;
+}
+
+.footer-icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-5px);
+  width: var(--twitter--logo-width);
+  height: var(--twitter--logo-height);
+}
+
+.footer-icon path {
+  display: none;
+}
+.twitter-icon {
+  background-image: var(--twitter-icon);
+}
+
+.footer__item a {
+  transition: all 200ms linear;
+}
+
+.footer__items a:hover {
+  opacity: 0.6;
+}
+.navbar-search {
+  margin: 0 auto;
+  flex: 1;
+  max-width: 500px; /* Adjust max-width as needed */
 }

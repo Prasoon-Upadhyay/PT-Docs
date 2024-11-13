@@ -102,6 +102,11 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {
+            type: 'search', // Algolia search bar
+            position: 'right',
+            className: 'navbar-search',
+          },
         ],
       },
       footer: {
@@ -111,25 +116,30 @@ const config = {
             title: ' ',
             items: [
               {
-                label: 'Terminal',
-                to: 'https://www.app.pandaterminal.com ',
-                logo: {
-                  alt: 'PANDA Logo',
-                  src: 'img/favicon.ico',
-                  href: "https://www.pandaterminal.com"
-                }
+                html: `
+                  <a href="https://www.app.pandaterminal.com" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/favicon.ico" alt="PANDA Logo" style="width: 24px; height: 24px;"/>
+                  </a>
+                `,
               },
               {
-                label: 'Telegram',
-                href: 'https://t.me/pandaterminal',
+                html: `
+                  <a href="https://t.me/pandaterminal" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/telegram.png" alt="Telegram" style="width: 24px; height: 24px;"/>
+                  </a>
+                `,
               },
               {
-                label: 'Twitter',
+                label: ' ',
                 href: 'https://x.com/pandaterminal',
+                className: 'footer-icon twitter-icon'
               },
               {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/@xChangingGood',
+                html: `
+                  <a href="https://www.youtube.com/@xChangingGood" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/youtube.png" alt="YouTube" style="width: 24px; height: 24px;"/>
+                  </a>
+                `,
               },
             ],
           },
